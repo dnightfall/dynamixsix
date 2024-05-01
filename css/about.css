@@ -1,0 +1,220 @@
+.home {
+    position: relative;
+    background-image: var(--src); /* Menggunakan latar belakang yang sama */
+    background-size: cover;
+  }
+  .home.main {
+    display: flex;
+    flex-direction: column;
+    background: var(--src) center center/100% 100% no-repeat;
+    background-color: #1A1A1A;
+    overflow: hidden;
+  }
+  .home .section-header {
+    position: fixed;
+    top: -100px; /* Hide section header initially */
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  @media (min-width: 1920px) and (max-width: 2999px) {
+    .home.main {
+      -moz-column-gap: 0px;
+      column-gap: 0px;
+    }
+  }
+  .home .header{
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    position: relative;
+    background-size: 100%;
+    margin-top: 100px;
+    z-index: 3;
+  }
+  .home .nav {
+    display: flex;
+    flex-direction: column;
+    margin: 18px auto 0px;
+    width: 77.78%;
+    background-color: #121212;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.247);
+    z-index: 3;
+  }
+  @media (max-width: 1199px) {
+    .home .nav {
+      margin: 18px 10px 0px;
+      width: 98%;
+    }
+  }
+  .home .flex_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 10px;
+    margin: 21px 33px 22px 32px;
+  }
+  .home .nav_logo {
+    width: 214px;
+  }
+  .home .nav_text {
+    display: flex;
+    align-items: center;
+    gap: 0px 21px;
+    width: 432px;
+  }
+  @media (min-width: 1920px) and (max-width: 2999px) {
+    .home .nav_text {
+      margin: 0px 250px 0px 0px;
+      margin-right: 10px;
+    }
+  }
+  .home .info,
+  .home .nav_detail {
+    display: flex;
+    justify-content: center;
+    font: 700 12px/1.25 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .home .info {
+    color: #f2f2f2; /* Warna default saat tidak dihover */
+  }
+  
+  .home .nav_detail {
+    color: #f2f2f2; /* Warna default saat tidak dihover */
+  }
+  
+  /* Saat tombol dihover */
+  .home .info:hover,
+  .home .nav_detail:hover {
+    color: #ff4242; /* Warna saat dihover */
+  }
+  
+  .home .nav_prof {
+    width: 47px;
+    height: 47px;
+  }
+  @media (min-width: 1920px) and (max-width: 2999px) {
+    .home .nav_prof {
+      margin: 0px 15px 0px 0px;
+    }
+  }
+  /* ------------------------middle-------------------- */
+.logo-top {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 63px;
+}
+.top-image {
+    width: 722px;
+    height: 159px;
+    scale: 85%;
+}
+/* ---------------------------carousel1------------------------ */
+.carousel1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    scale: 90%;
+}
+.carousel1 .left1 {
+    display: flex;
+    height: 450px;
+    width: 360px;
+    background-color: #121212;
+}
+.carousel1 .right-text {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+}
+.carousel1 .text1 {
+    font: 700 28px/1.2 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 13px;
+    margin-top: 8px;
+}
+.carousel1 .text2 {
+    font: 200 28px/1.2 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 13px;
+}
+.carousel2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 60px;
+    scale: 90%;
+}
+.carousel2 .right1 {
+  display: flex;
+  height: 450px;
+  width: 360px;
+  background-color: #121212;
+  margin-left: 13px;
+}
+.carousel2 .left-text {
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    
+}
+.carousel2 .text1 {
+    font: 700 28px/1.2 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-top: 8px;
+}
+.carousel2 .text2 {
+    font: 200 28px/1.2 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+.carousel2 .text3 {
+  font: 200 28px/1.2 "Plus Jakarta Sans", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.carousel3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 60px;
+  scale: 90%;
+}
+.carousel3 .left1 {
+  display: flex;
+  height: 450px;
+  width: 360px;
+  background-color: #121212;
+}
+.carousel3 .right-text {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+}
+.carousel3 .text1 {
+  font: 700 28px/1.2 "Plus Jakarta Sans", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 13px;
+  margin-top: 8px;
+}
+.carousel3 .text2 {
+  font: 200 28px/1.2 "Plus Jakarta Sans", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 13px;
+}

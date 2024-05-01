@@ -1,0 +1,14 @@
+.label {
+    display: flex;
+    font: 700 24px/1.25 "Plus Jakarta Sans", Helvetica, Arial, serif;
+}
+.title-text {
+    display: flex;
+    width: 200px;
+    height: 20px;
+}
+.textarea {
+    display: flex;
+    width: 700px;
+    height: 200px;
+}

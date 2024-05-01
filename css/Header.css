@@ -1,0 +1,108 @@
+.home {
+  position: relative;
+  background-image: var(--src); /* Menggunakan latar belakang yang sama */
+  background-size: cover;
+}
+.home.main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  background: var(--src) center center/100% 100% no-repeat;
+  overflow: hidden;
+}
+
+.home .section-header {
+  position: fixed;
+  top: -100px; /* Hide section header initially */
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  transition: top 0.3s ease-in-out;
+  z-index: 1000;
+}
+@media (min-width: 1920px) and (max-width: 2999px) {
+  .home.main {
+    -moz-column-gap: 0px;
+    column-gap: 0px;
+  }
+}
+.home .header{
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  position: relative;
+  background-size: 100%;
+  margin-top: -33px;
+  z-index: 2;
+}
+.home .nav {
+  display: flex;
+  flex-direction: column;
+  margin: 18px auto 0px;
+  width: 77.78%;
+  background-color: #121212;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.247);
+  z-index: 3;
+}
+@media (max-width: 1199px) {
+  .home .nav {
+    margin: 18px 10px 0px;
+    width: 98%;
+  }
+}
+.home .flex_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 10px;
+  margin: 21px 33px 22px 32px;
+}
+.home .nav_logo {
+  width: 214px;
+}
+.home .nav_text {
+  display: flex;
+  align-items: center;
+  gap: 0px 21px;
+  width: 432px;
+}
+@media (min-width: 1920px) and (max-width: 2999px) {
+  .home .nav_text {
+    margin: 0px 250px 0px 0px;
+    margin-right: 10px;
+  }
+}
+.home .info,
+.home .nav_detail {
+  display: flex;
+  justify-content: center;
+  font: 700 12px/1.25 "Plus Jakarta Sans", Helvetica, Arial, serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+.home .info {
+  color: #f2f2f2; /* Warna default saat tidak dihover */
+}
+
+.home .nav_detail {
+  color: #f2f2f2; /* Warna default saat tidak dihover */
+}
+
+/* Saat tombol dihover */
+.home .info:hover,
+.home .nav_detail:hover {
+  color: #ff4242; /* Warna saat dihover */
+}
+
+.home .nav_prof {
+  width: 47px;
+  height: 47px;
+  cursor: pointer;
+}
+@media (min-width: 1920px) and (max-width: 2999px) {
+  .home .nav_prof {
+    margin: 0px 15px 0px 0px;
+  }
+}

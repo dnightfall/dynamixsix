@@ -1,0 +1,41 @@
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #121212;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform-origin: top;
+    transform: translateY(-10px);
+}
+
+.dropdown_content a {
+    color: #f1f1f1;
+    padding: 12px 16px;
+    font: 700 12px/1.25 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown_content a:hover {
+    color: #FF4242;
+}
+
+.nav_prof_container:hover .dropdown_content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Memastikan bahwa dropdown berada di bawah gambar profil */
+.nav_prof_container {
+    position: relative;
+}
+
+.dropdown_content {
+    top: 100%;
+    left: 0;
+}

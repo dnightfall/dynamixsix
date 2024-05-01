@@ -1,0 +1,267 @@
+.top-bundle {
+    position: relative;
+    height: 295px;
+    width: 740px;
+    background-color: #1A1A1A;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    align-self: center;
+    border-radius: 15px;
+    box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.5),
+    inset 4px 4px 4px rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bundle-container {
+    width: 170px;
+    height: 250px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+.bundle {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 170px;
+    height: 170px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.35)
+    
+    /* Add more styles as needed */
+}
+.bundle::after {
+  content: ""; /* Menambahkan konten kosong */
+  position: absolute; /* Mengatur posisi absolut untuk pseudo-element */
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(0, 0, 0, 0.04); /* Warna latar belakang hitam transparan */
+  box-shadow: -5px -5px 6px rgba(0, 0, 0, 0.02), /* Atas kiri */
+  5px -5px 6px rgba(0, 0, 0, 0.02), /* Atas kanan */
+  -5px 5px 6px rgba(0, 0, 0, 0.02), /* Bawah kiri */
+  5px 5px 6px rgba(0, 0, 0, 0.02); /* Bawah kanan */;
+  border-radius: 15px; /* Menyesuaikan radius dengan kartu */
+}
+.bundle-image {
+    display: flex;
+    cursor: pointer;
+    width: 100%; /* Adjust the width as needed */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.bundle-image-back {
+    display: flex;
+    align-self: flex-start;
+    width: 87px;
+    height: 76px;
+    z-index: 1;
+    filter: brightness(100%);
+}
+.bundle-image-front {
+    display: flex;
+    align-self: flex-end;
+    width: 121px;
+    height: 105px;
+    margin-top: 25px;
+    margin-left: -70px;
+    z-index: 2;
+    filter: brightness(105%);
+}
+.bundle-description {
+    width: 170px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #555;
+}
+.bundle-title {
+    font: 600 18px/1 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: #E3E3E3;
+    margin-top: 12px;
+}
+.desc_col {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-between; /* Menempatkan elemen secara horizontal dengan ruang di antara */
+    align-items: center; /* Posisikan elemen secara vertikal di tengah */
+}
+
+.bundle-text {
+    margin-right: auto; /* Menggeser elemen p ke sisi kiri */
+    font: 400 18px/1 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: #E3E3E3;
+}
+
+.bundle-button {
+    margin-left: 10px; /* Mengatur jarak antara elemen p dan elemen a */
+}
+.bundle-right {
+    font: 600 29px/1 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: #E3E3E3;
+    margin-left: 10px;
+}
+.middle {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.price-original {
+    font: 400 18px/1 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: #E3E3E3;
+    display: inline-block;
+}
+.price-original::after{
+    content: ' ';
+    display: inline-block;
+    width: 82px;
+    height: 3px;
+    background-color: red; /* Warna strip merah */
+    position: absolute;
+    border-radius: 10px;
+    margin-left: -77px;
+    margin-top: 8px;
+}
+.price-discount {
+    font: 600 29px/1 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: #E3E3E3;
+}
+.item1 {
+    font: 800 14px/1 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: #121212;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    align-self: last baseline;
+    margin-bottom: 2px;
+    margin-left: 17px;
+    height: 23px;
+    width: 72px;
+}
+
+.item2 {
+    font: 800 14px/1 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: #121212;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    align-self: last baseline;
+    margin-bottom: 2px;
+    margin-left: 15px;
+    height: 23px;
+    width: 90px;
+}
+.middle-desc {
+    font: 300 13px/1.2 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: #FFFFFF;
+    width: 340px;
+    margin-top: 10px;
+}
+.middle-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    width: 325px;
+    height: 50px;
+}
+.add-cart {
+    width: 140px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    background-color: #FF4242;
+    border-radius: 15px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+.cart-text {
+    font: 600 18px/1.2 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.cart-arrow {
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    margin-right: 9px;
+}
+.share {
+    background-color: #F2F2F2;
+    width: 22.5px;
+    height: 22.5px;
+    align-self: flex-end;
+    margin-left: auto;
+    border-radius: 10px;
+    margin-right: -100px;
+    margin-bottom: 1px;
+}
+.share-img {
+    width: 13px;
+    height: 14px;
+    margin-bottom: 7px;
+    margin-left: 3px;
+}
+.heart-img {
+    width: 11px;
+    height: 10px;
+    margin-bottom: 8.5px;
+    margin-left: 5.5px;
+}
+/* -------------------------------------------------------middle page-------------------------------------------------- */
+.middle-page {
+    display: flex;
+    width: 1112px;
+    height: 276px;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.middle-left {
+    width: 719px;
+    display: flex;
+    flex-direction: column;
+}
+.left-text {
+    font: 700 50px/0.85 "Plus Jakarta Sans", Helvetica, Arial, serif;
+    color: #1A1A1A;
+}
+.left-img {
+    width: 297px;
+    height: 65px;
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+.image{
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+}
+.right-img1 {
+    margin-right: 0;
+    margin-left: auto;
+    z-index: 1;
+}
+.right-img2  {
+    z-index: 2;
+    margin-right: -65px;
+}
